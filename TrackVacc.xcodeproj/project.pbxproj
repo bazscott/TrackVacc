@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6858F09269DACC700AFF9D1 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6858F08269DACC700AFF9D1 /* ActivityViewController.swift */; };
+		C6889CE9269BFD8B00AC0C58 /* TweetFromDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6889CE8269BFC4B00AC0C58 /* TweetFromDataContainer.swift */; };
+		C6889CEB269BFE3100AC0C58 /* TweetFromDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6889CEA269BFE3000AC0C58 /* TweetFromDataView.swift */; };
+		C6889CEC269C338400AC0C58 /* TweetFromDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6889CE8269BFC4B00AC0C58 /* TweetFromDataContainer.swift */; };
+		C6889CED269C338600AC0C58 /* TweetFromDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6889CEA269BFE3000AC0C58 /* TweetFromDataView.swift */; };
+		C6C5990A2699584500F0EE18 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C599092699584500F0EE18 /* OptionView.swift */; };
+		C6C5990B2699584500F0EE18 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C599092699584500F0EE18 /* OptionView.swift */; };
+		C6C5990D2699644000F0EE18 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5990C2699644000F0EE18 /* ButtonStyles.swift */; };
+		C6C5990E2699644000F0EE18 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5990C2699644000F0EE18 /* ButtonStyles.swift */; };
+		C6D7118826A56B0100FBEE4A /* NumericFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D7118726A56B0100FBEE4A /* NumericFields.swift */; };
+		C6D7118926A56B0600FBEE4A /* NumericFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D7118726A56B0100FBEE4A /* NumericFields.swift */; };
+		C6DA06D3268FE076005DC245 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06D2268FE076005DC245 /* Tests_iOS.swift */; };
+		C6DA06DD268FE076005DC245 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06DC268FE076005DC245 /* Tests_macOS.swift */; };
+		C6DA06DE268FE076005DC245 /* TrackVaccApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06BC268FE074005DC245 /* TrackVaccApp.swift */; };
+		C6DA06DF268FE076005DC245 /* TrackVaccApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06BC268FE074005DC245 /* TrackVaccApp.swift */; };
+		C6DA06E0268FE076005DC245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06BD268FE074005DC245 /* ContentView.swift */; };
+		C6DA06E1268FE076005DC245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06BD268FE074005DC245 /* ContentView.swift */; };
+		C6DA06E2268FE076005DC245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DA06BE268FE076005DC245 /* Assets.xcassets */; };
+		C6DA06E3268FE076005DC245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DA06BE268FE076005DC245 /* Assets.xcassets */; };
+		C6DA06F3268FE138005DC245 /* VaxDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06F2268FE138005DC245 /* VaxDataStore.swift */; };
+		C6DA06F4268FE138005DC245 /* VaxDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06F2268FE138005DC245 /* VaxDataStore.swift */; };
+		C6DA06F9268FE2F6005DC245 /* VaxDataPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06F8268FE2F6005DC245 /* VaxDataPacket.swift */; };
+		C6DA06FA268FE2F6005DC245 /* VaxDataPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06F8268FE2F6005DC245 /* VaxDataPacket.swift */; };
+		C6DA070026902A91005DC245 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06FF26902A91005DC245 /* AppStyle.swift */; };
+		C6DA070126902A91005DC245 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA06FF26902A91005DC245 /* AppStyle.swift */; };
+		C6DA0706269034DA005DC245 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA0705269034DA005DC245 /* ShareView.swift */; };
+		C6DA0707269034DA005DC245 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA0705269034DA005DC245 /* ShareView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6DA06CF268FE076005DC245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6DA06B7268FE074005DC245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6DA06C2268FE076005DC245;
+			remoteInfo = "TrackVacc (iOS)";
+		};
+		C6DA06D9268FE076005DC245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6DA06B7268FE074005DC245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6DA06C8268FE076005DC245;
+			remoteInfo = "TrackVacc (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6858F08269DACC700AFF9D1 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		C6889CE8269BFC4B00AC0C58 /* TweetFromDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFromDataContainer.swift; sourceTree = "<group>"; };
+		C6889CEA269BFE3000AC0C58 /* TweetFromDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFromDataView.swift; sourceTree = "<group>"; };
+		C6C599092699584500F0EE18 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		C6C5990C2699644000F0EE18 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		C6D7118726A56B0100FBEE4A /* NumericFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericFields.swift; sourceTree = "<group>"; };
+		C6DA06BC268FE074005DC245 /* TrackVaccApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackVaccApp.swift; sourceTree = "<group>"; };
+		C6DA06BD268FE074005DC245 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6DA06BE268FE076005DC245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6DA06C3268FE076005DC245 /* TrackVacc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackVacc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DA06C9268FE076005DC245 /* TrackVacc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackVacc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DA06CE268FE076005DC245 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DA06D2268FE076005DC245 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		C6DA06D8268FE076005DC245 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DA06DC268FE076005DC245 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		C6DA06F2268FE138005DC245 /* VaxDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxDataStore.swift; sourceTree = "<group>"; };
+		C6DA06F8268FE2F6005DC245 /* VaxDataPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxDataPacket.swift; sourceTree = "<group>"; };
+		C6DA06FE2690123D005DC245 /* TrackVacc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrackVacc.entitlements; sourceTree = "<group>"; };
+		C6DA06FF26902A91005DC245 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		C6DA0705269034DA005DC245 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		C6DA070826903BE2005DC245 /* TrackVacc--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TrackVacc--iOS--Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6DA06C0268FE076005DC245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06C6268FE076005DC245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06CB268FE076005DC245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06D5268FE076005DC245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6889CE2269BFB5200AC0C58 /* From Entered Data */ = {
+			isa = PBXGroup;
+			children = (
+				C6889CE8269BFC4B00AC0C58 /* TweetFromDataContainer.swift */,
+				C6889CEA269BFE3000AC0C58 /* TweetFromDataView.swift */,
+			);
+			path = "From Entered Data";
+			sourceTree = "<group>";
+		};
+		C6889CE3269BFB6800AC0C58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA06BC268FE074005DC245 /* TrackVaccApp.swift */,
+				C6DA06BD268FE074005DC245 /* ContentView.swift */,
+				C6C599092699584500F0EE18 /* OptionView.swift */,
+				C6DA0705269034DA005DC245 /* ShareView.swift */,
+				C6889CE5269BFBA600AC0C58 /* Helpers */,
+				C6889CE2269BFB5200AC0C58 /* From Entered Data */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6889CE4269BFB7500AC0C58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA06F8268FE2F6005DC245 /* VaxDataPacket.swift */,
+				C6DA06F2268FE138005DC245 /* VaxDataStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6889CE5269BFBA600AC0C58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6C5990C2699644000F0EE18 /* ButtonStyles.swift */,
+				C6858F08269DACC700AFF9D1 /* ActivityViewController.swift */,
+				C6D7118726A56B0100FBEE4A /* NumericFields.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C6889CE6269BFBB800AC0C58 /* Assets & Style */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA06FF26902A91005DC245 /* AppStyle.swift */,
+				C6DA06BE268FE076005DC245 /* Assets.xcassets */,
+			);
+			path = "Assets & Style";
+			sourceTree = "<group>";
+		};
+		C6DA06B6268FE074005DC245 = {
+			isa = PBXGroup;
+			children = (
+				C6DA070826903BE2005DC245 /* TrackVacc--iOS--Info.plist */,
+				C6DA06FE2690123D005DC245 /* TrackVacc.entitlements */,
+				C6DA06BB268FE074005DC245 /* Shared */,
+				C6DA06D1268FE076005DC245 /* Tests iOS */,
+				C6DA06DB268FE076005DC245 /* Tests macOS */,
+				C6DA06C4268FE076005DC245 /* Products */,
+				C6DA06FB268FE44F005DC245 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6DA06BB268FE074005DC245 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C6889CE4269BFB7500AC0C58 /* Model */,
+				C6889CE3269BFB6800AC0C58 /* Views */,
+				C6889CE6269BFBB800AC0C58 /* Assets & Style */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C6DA06C4268FE076005DC245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA06C3268FE076005DC245 /* TrackVacc.app */,
+				C6DA06C9268FE076005DC245 /* TrackVacc.app */,
+				C6DA06CE268FE076005DC245 /* Tests iOS.xctest */,
+				C6DA06D8268FE076005DC245 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6DA06D1268FE076005DC245 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA06D2268FE076005DC245 /* Tests_iOS.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		C6DA06DB268FE076005DC245 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA06DC268FE076005DC245 /* Tests_macOS.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		C6DA06FB268FE44F005DC245 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6DA06C2268FE076005DC245 /* TrackVacc (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6DA06E6268FE076005DC245 /* Build configuration list for PBXNativeTarget "TrackVacc (iOS)" */;
+			buildPhases = (
+				C6DA06BF268FE076005DC245 /* Sources */,
+				C6DA06C0268FE076005DC245 /* Frameworks */,
+				C6DA06C1268FE076005DC245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrackVacc (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "TrackVacc (iOS)";
+			productReference = C6DA06C3268FE076005DC245 /* TrackVacc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6DA06C8268FE076005DC245 /* TrackVacc (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6DA06E9268FE076005DC245 /* Build configuration list for PBXNativeTarget "TrackVacc (macOS)" */;
+			buildPhases = (
+				C6DA06C5268FE076005DC245 /* Sources */,
+				C6DA06C6268FE076005DC245 /* Frameworks */,
+				C6DA06C7268FE076005DC245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrackVacc (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "TrackVacc (macOS)";
+			productReference = C6DA06C9268FE076005DC245 /* TrackVacc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6DA06CD268FE076005DC245 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6DA06EC268FE076005DC245 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				C6DA06CA268FE076005DC245 /* Sources */,
+				C6DA06CB268FE076005DC245 /* Frameworks */,
+				C6DA06CC268FE076005DC245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6DA06D0268FE076005DC245 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = C6DA06CE268FE076005DC245 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C6DA06D7268FE076005DC245 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6DA06EF268FE076005DC245 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				C6DA06D4268FE076005DC245 /* Sources */,
+				C6DA06D5268FE076005DC245 /* Frameworks */,
+				C6DA06D6268FE076005DC245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6DA06DA268FE076005DC245 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = C6DA06D8268FE076005DC245 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6DA06B7268FE074005DC245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C6DA06C2268FE076005DC245 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C6DA06C8268FE076005DC245 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C6DA06CD268FE076005DC245 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C6DA06C2268FE076005DC245;
+					};
+					C6DA06D7268FE076005DC245 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C6DA06C8268FE076005DC245;
+					};
+				};
+			};
+			buildConfigurationList = C6DA06BA268FE074005DC245 /* Build configuration list for PBXProject "TrackVacc" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6DA06B6268FE074005DC245;
+			packageReferences = (
+			);
+			productRefGroup = C6DA06C4268FE076005DC245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6DA06C2268FE076005DC245 /* TrackVacc (iOS) */,
+				C6DA06C8268FE076005DC245 /* TrackVacc (macOS) */,
+				C6DA06CD268FE076005DC245 /* Tests iOS */,
+				C6DA06D7268FE076005DC245 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6DA06C1268FE076005DC245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA06E2268FE076005DC245 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06C7268FE076005DC245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA06E3268FE076005DC245 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06CC268FE076005DC245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06D6268FE076005DC245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6DA06BF268FE076005DC245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA06F9268FE2F6005DC245 /* VaxDataPacket.swift in Sources */,
+				C6D7118826A56B0100FBEE4A /* NumericFields.swift in Sources */,
+				C6C5990D2699644000F0EE18 /* ButtonStyles.swift in Sources */,
+				C6DA070026902A91005DC245 /* AppStyle.swift in Sources */,
+				C6DA06E0268FE076005DC245 /* ContentView.swift in Sources */,
+				C6DA06F3268FE138005DC245 /* VaxDataStore.swift in Sources */,
+				C6889CEB269BFE3100AC0C58 /* TweetFromDataView.swift in Sources */,
+				C6889CE9269BFD8B00AC0C58 /* TweetFromDataContainer.swift in Sources */,
+				C6DA06DE268FE076005DC245 /* TrackVaccApp.swift in Sources */,
+				C6858F09269DACC700AFF9D1 /* ActivityViewController.swift in Sources */,
+				C6DA0706269034DA005DC245 /* ShareView.swift in Sources */,
+				C6C5990A2699584500F0EE18 /* OptionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06C5268FE076005DC245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA06FA268FE2F6005DC245 /* VaxDataPacket.swift in Sources */,
+				C6889CED269C338600AC0C58 /* TweetFromDataView.swift in Sources */,
+				C6C5990E2699644000F0EE18 /* ButtonStyles.swift in Sources */,
+				C6DA070126902A91005DC245 /* AppStyle.swift in Sources */,
+				C6DA06E1268FE076005DC245 /* ContentView.swift in Sources */,
+				C6DA06F4268FE138005DC245 /* VaxDataStore.swift in Sources */,
+				C6DA06DF268FE076005DC245 /* TrackVaccApp.swift in Sources */,
+				C6889CEC269C338400AC0C58 /* TweetFromDataContainer.swift in Sources */,
+				C6D7118926A56B0600FBEE4A /* NumericFields.swift in Sources */,
+				C6DA0707269034DA005DC245 /* ShareView.swift in Sources */,
+				C6C5990B2699584500F0EE18 /* OptionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06CA268FE076005DC245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA06D3268FE076005DC245 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DA06D4268FE076005DC245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA06DD268FE076005DC245 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6DA06D0268FE076005DC245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6DA06C2268FE076005DC245 /* TrackVacc (iOS) */;
+			targetProxy = C6DA06CF268FE076005DC245 /* PBXContainerItemProxy */;
+		};
+		C6DA06DA268FE076005DC245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6DA06C8268FE076005DC245 /* TrackVacc (macOS) */;
+			targetProxy = C6DA06D9268FE076005DC245 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C6DA06E4268FE076005DC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6DA06E5268FE076005DC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C6DA06E7268FE076005DC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrackVacc--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AusVax;
+				INFOPLIST_KEY_CFBundleExecutable = TrackVacc;
+				INFOPLIST_KEY_CFBundleName = TrackVacc;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bazscott.app.TrackVacc;
+				PRODUCT_NAME = TrackVacc;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6DA06E8268FE076005DC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrackVacc--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AusVax;
+				INFOPLIST_KEY_CFBundleExecutable = TrackVacc;
+				INFOPLIST_KEY_CFBundleName = TrackVacc;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bazscott.app.TrackVacc;
+				PRODUCT_NAME = TrackVacc;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6DA06EA268FE076005DC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = TrackVacc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleExecutable = TrackVacc;
+				INFOPLIST_KEY_CFBundleName = AusVax;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bazscott.app.TrackVacc;
+				PRODUCT_NAME = TrackVacc;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C6DA06EB268FE076005DC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = TrackVacc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleExecutable = TrackVacc;
+				INFOPLIST_KEY_CFBundleName = AusVax;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bazscott.app.TrackVacc;
+				PRODUCT_NAME = TrackVacc;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C6DA06ED268FE076005DC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bazscott.app.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TrackVacc (iOS)";
+			};
+			name = Debug;
+		};
+		C6DA06EE268FE076005DC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bazscott.app.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TrackVacc (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6DA06F0268FE076005DC245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bazscott.app.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TrackVacc (macOS)";
+			};
+			name = Debug;
+		};
+		C6DA06F1268FE076005DC245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87M7MK624Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bazscott.app.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TrackVacc (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6DA06BA268FE074005DC245 /* Build configuration list for PBXProject "TrackVacc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DA06E4268FE076005DC245 /* Debug */,
+				C6DA06E5268FE076005DC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6DA06E6268FE076005DC245 /* Build configuration list for PBXNativeTarget "TrackVacc (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DA06E7268FE076005DC245 /* Debug */,
+				C6DA06E8268FE076005DC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6DA06E9268FE076005DC245 /* Build configuration list for PBXNativeTarget "TrackVacc (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DA06EA268FE076005DC245 /* Debug */,
+				C6DA06EB268FE076005DC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6DA06EC268FE076005DC245 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DA06ED268FE076005DC245 /* Debug */,
+				C6DA06EE268FE076005DC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6DA06EF268FE076005DC245 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DA06F0268FE076005DC245 /* Debug */,
+				C6DA06F1268FE076005DC245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6DA06B7268FE074005DC245 /* Project object */;
+}
