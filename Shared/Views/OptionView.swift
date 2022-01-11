@@ -7,7 +7,7 @@ struct OptionView: View {
     @State private var firstPc: Double = 0
     @State private var secondPc: Double = 0
     @State private var thirdPc: Double = 0
-    @State private var adultPc: Double = 0
+    @State private var boosterEligiblePc: Double = 0
     @State private var dosesToday: Int = 0
 
     @State var tweetFromDataIsPresented: Bool = false
@@ -59,9 +59,9 @@ struct OptionView: View {
                 .padding([.top, .leading, .trailing])
 
                 HStack {
-                    PercentageField(value: $adultPc)
+                    PercentageField(value: $boosterEligiblePc)
                         .frame(width: 150)
-                    Text("% 12+ Full")
+                    Text("% Booster Eligible")
                         .font(.system(size: 24, design: .monospaced))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
@@ -84,7 +84,7 @@ struct OptionView: View {
                     let data = VaxDataPacket(firstPc: firstPc,
                                              secondPc: secondPc,
                                              thirdPc: thirdPc,
-                                             adultPc: adultPc,
+                                             boosterEligiblePc: boosterEligiblePc,
                                              dosesToday: dosesToday)
                     vaxDataStore.generateFrom(data: data)
                     tweetFromDataIsPresented = true

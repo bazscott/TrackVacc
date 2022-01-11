@@ -14,8 +14,17 @@ class VaxDataStore: ObservableObject {
         let formatter = NumberFormatter()
         formatter.numberStyle = .percent
         formatter.locale = Locale(identifier: "en_AU")
-        formatter.roundingMode = .halfUp
+        formatter.roundingMode = .down
         formatter.maximumFractionDigits = 1
+        return formatter
+    }
+
+    static var percentFormatterNoFractions: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        formatter.locale = Locale(identifier: "en_AU")
+        formatter.roundingMode = .down
+        formatter.maximumFractionDigits = 0
         return formatter
     }
 
@@ -23,7 +32,7 @@ class VaxDataStore: ObservableObject {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.locale = Locale(identifier: "en_AU")
-        formatter.roundingMode = .halfUp
+        formatter.roundingMode = .down
         formatter.maximumFractionDigits = 0
         return formatter
     }
@@ -47,11 +56,9 @@ private extension VaxDataStore {
         let tweetString = """
         \(squares)
 
-        🟢 \(data.thirdPc.asPercentage) 💉💉💉
-        🟩 \(data.secondPc.asPercentage) 💉💉
-        🟪 \(data.firstPc.asPercentage) 💉
-
-        \(data.adultPc.asPercentage) of 12+
+        3💉🟢 \(data.thirdPc.asPercentage) (\(data.boosterEligiblePc.asPercentageNoFractions) eligible)
+        2💉🟩 \(data.secondPc.asPercentage)
+        1💉🟪 \(data.firstPc.asPercentage)
 
         💉📅 \(data.dosesToday.asStyled)
         """
@@ -62,8 +69,8 @@ private extension VaxDataStore {
         let boostedSquares = Int(data.thirdPc)
         let fullySquares = Int(data.secondPc)
         let partiallySquares = Int(data.firstPc)
-        let blankSquares: Int = 85 - boostedSquares - fullySquares - partiallySquares
-        let childSquares: Int = 15
+        let blankSquares: Int = 95 - boostedSquares - fullySquares - partiallySquares
+        let childSquares: Int = 5
 
         var outputString = ""
         var countSquares = 1
@@ -102,6 +109,10 @@ private extension VaxDataStore {
 extension Double {
     var asPercentage: String {
         VaxDataStore.percentFormatter.string(from: NSNumber(value: self / 100)) ?? "n/a"
+    }
+
+    var asPercentageNoFractions: String {
+        VaxDataStore.percentFormatterNoFractions.string(from: NSNumber(value: self / 100)) ?? "n/a"
     }
 }
 
