@@ -56,11 +56,12 @@ private extension VaxDataStore {
         let tweetString = """
         \(squares)
 
-        3💉🟢 \(data.thirdPc.asPercentage) (\(data.boosterEligiblePc.asPercentageNoFractions) eligible)
-        2💉🟩 \(data.secondPc.asPercentage)
-        1💉🟪 \(data.firstPc.asPercentage)
+        3🟢 \(data.thirdPc.asPercentage) (\(data.boosterEligiblePc.asPercentageNoFractions) eligible)
+        2🟩 \(data.secondPc.asPercentage)
+        1🟪 \(data.firstPc.asPercentage)
+        0⬜️ \(data.nonePc.asPercentage)
 
-        💉📅 \(data.dosesToday.asStyled)
+        📅 \(data.dosesToday.asStyled)
         """
         tweetText = tweetString
     }

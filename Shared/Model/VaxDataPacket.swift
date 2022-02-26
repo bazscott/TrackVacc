@@ -7,12 +7,19 @@ struct VaxDataPacket {
     let boosterEligiblePc: Double
     let dosesToday: Int
 
+    var nonePc: Double { 100.00 - (firstPc + secondPc + thirdPc) }
+}
+
+// MARK: - CustomStringConvertible
+
+extension VaxDataPacket: CustomStringConvertible {
     var description: String {
         """
 
         ===================================================
         VaxDataPacket
         ---------------------------------------------------
+        None %:             \(nonePc.asPercentage)
         First %:            \(firstPc.asPercentage)
         Second %:           \(secondPc.asPercentage)
         Third %:            \(secondPc.asPercentage)
@@ -22,5 +29,4 @@ struct VaxDataPacket {
 
         """
     }
-
 }
