@@ -6,6 +6,7 @@ struct VaxDataPacket {
     let thirdPc: Double
     let boosterEligiblePc: Double
     let dosesToday: Int
+    let childrenPc: Double = 5
 
     var nonePc: Double { 100.00 - (firstPc + secondPc + thirdPc) }
 }
