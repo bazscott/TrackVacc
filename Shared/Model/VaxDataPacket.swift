@@ -4,11 +4,11 @@ struct VaxDataPacket {
     let firstPc: Double
     let secondPc: Double
     let thirdPc: Double
-    let boosterEligiblePc: Double
-    let dosesToday: Int
+    let fourthPc: Double
     let childrenPc: Double = 5
+    let thirdEligiblePc: Double
 
-    var nonePc: Double { 100.00 - (firstPc + secondPc + thirdPc) }
+    var nonePc: Double { 100.00 - (firstPc + secondPc + thirdPc + fourthPc) }
 }
 
 // MARK: - CustomStringConvertible
@@ -23,9 +23,9 @@ extension VaxDataPacket: CustomStringConvertible {
         None %:             \(nonePc.asPercentage)
         First %:            \(firstPc.asPercentage)
         Second %:           \(secondPc.asPercentage)
-        Third %:            \(secondPc.asPercentage)
-        Booster Eligible %: \(boosterEligiblePc.asPercentage)
-        Doses Today:        \(dosesToday.asStyled)
+        Third %:            \(thirdPc.asPercentage)
+        Fourth %:           \(fourthPc.asPercentage)
+        Third Eligible %:   \(thirdEligiblePc.asPercentage)
         ===================================================
 
         """

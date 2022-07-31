@@ -7,7 +7,8 @@ struct OptionView: View {
     @State private var firstPc: Double = 0
     @State private var secondPc: Double = 0
     @State private var thirdPc: Double = 0
-    @State private var boosterEligiblePc: Double = 0
+    @State private var fourthPc: Double = 0
+    @State private var thirdEligiblePc: Double = 0
     @State private var dosesToday: Int = 0
 
     @State var tweetFromDataIsPresented: Bool = false
@@ -28,7 +29,7 @@ struct OptionView: View {
                 HStack {
                     PercentageField(value: $firstPc)
                         .frame(width: 150)
-                    Text("% Partial")
+                    Text("% First")
                         .font(.system(size: 24, design: .monospaced))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
@@ -39,7 +40,7 @@ struct OptionView: View {
                 HStack {
                     PercentageField(value: $secondPc)
                         .frame(width: 150)
-                    Text("% Full")
+                    Text("% Second")
                         .font(.system(size: 24, design: .monospaced))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
@@ -50,7 +51,7 @@ struct OptionView: View {
                 HStack {
                     PercentageField(value: $thirdPc)
                         .frame(width: 150)
-                    Text("% Boosted")
+                    Text("% Third")
                         .font(.system(size: 24, design: .monospaced))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
@@ -59,9 +60,9 @@ struct OptionView: View {
                 .padding([.top, .leading, .trailing])
 
                 HStack {
-                    PercentageField(value: $boosterEligiblePc)
+                    PercentageField(value: $fourthPc)
                         .frame(width: 150)
-                    Text("% Booster Eligible")
+                    Text("% Fourth")
                         .font(.system(size: 24, design: .monospaced))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
@@ -70,9 +71,9 @@ struct OptionView: View {
                 .padding([.top, .leading, .trailing])
 
                 HStack {
-                    IntField(int: $dosesToday)
+                    PercentageField(value: $thirdEligiblePc)
                         .frame(width: 150)
-                    Text("Doses today")
+                    Text("% Third Eligible")
                         .font(.system(size: 24, design: .monospaced))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
@@ -84,8 +85,8 @@ struct OptionView: View {
                     let data = VaxDataPacket(firstPc: firstPc,
                                              secondPc: secondPc,
                                              thirdPc: thirdPc,
-                                             boosterEligiblePc: boosterEligiblePc,
-                                             dosesToday: dosesToday)
+                                             fourthPc: fourthPc,
+                                             thirdEligiblePc: thirdEligiblePc)
                     vaxDataStore.generateFrom(data: data)
                     tweetFromDataIsPresented = true
                 }

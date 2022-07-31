@@ -56,12 +56,11 @@ private extension VaxDataStore {
         let tweetString = """
         \(squares)
 
-        3🟢 \(data.thirdPc.asPercentage) (\(data.boosterEligiblePc.asPercentageNoFractions) eligible)
+        4🟢 \(data.fourthPc.asPercentage)
+        3🟣 \(data.thirdPc.asPercentage) (\(data.thirdEligiblePc.asPercentageNoFractions) eligible)
         2🟩 \(data.secondPc.asPercentage)
         1🟪 \(data.firstPc.asPercentage)
         0⬜️ \(data.nonePc.asPercentage)
-
-        📅 \(data.dosesToday.asStyled)
         """
         tweetText = tweetString
     }
@@ -117,8 +116,8 @@ private extension VaxDataStore {
         // like `1.499` and `5.02` being rounded to `1` and `6`. From this we see that the
         // maximim error approaches `1`. We would prefer `0.5`, but we've gained the useful visual
         // communication property of monoticity. The sums will never decrease due to rounding.
-        let symbols = ["🟢", "🟩", "🟪", "◻️"]
-        let percentages = [data.thirdPc, data.secondPc, data.firstPc, data.childrenPc]
+        let symbols = ["🟢", "🟣", "🟩", "🟪", "◻️"]
+        let percentages = [data.fourthPc, data.thirdPc, data.secondPc, data.firstPc, data.childrenPc]
 
         var sumCount = 0
         var sumPercent = 0.0
@@ -131,7 +130,7 @@ private extension VaxDataStore {
         }
         displayCount.append(("⬜️", 100 - sumCount))
 
-        let displayOrder = ["🟢", "🟩", "🟪", "⬜️", "◻️"]
+        let displayOrder = ["🟢", "🟣", "🟩", "🟪", "⬜️", "◻️"]
         displayCount.sort { lhs, rhs in
             displayOrder.firstIndex(of: lhs.0) ?? 0 < displayOrder.firstIndex(of: rhs.0) ?? 0
         }
